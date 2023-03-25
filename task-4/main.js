@@ -56,4 +56,5 @@ orderList.addEventListener('click', () => {
 const clearList = document.querySelector('#clear-list');
 clearList.addEventListener('click', () => {
 	toDoList.innerHTML = '';
+	importantThings.length = 0;
 });
