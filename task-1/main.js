@@ -16,7 +16,11 @@ const celebs = [
 For example, if the function was called with the name 'Chris', it should return the string 'Chris is now a legend.'. */
 
 function makeLegend(name) {
-	return `${name} is now a legend`;
+	if (typeof name === 'string') {
+		return `${name} is now a legend`;
+	} else {
+		return `A legend requires a string`;
+	}
 }
 
 /* Using the makeLegend function, the celebs array and a for loop, create a new array which includes ' is now a legend.' for each celebrity. Save this new array to the variable legendaryCelebs. */
