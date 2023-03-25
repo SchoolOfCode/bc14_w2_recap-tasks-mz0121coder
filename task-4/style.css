@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  color: #ff6633;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f5e1da;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: none;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button#add-to-list {
+  background-color: #ff5533;
+  color: #fff;
+}
+
+button#add-to-list:hover {
+  background-color: #ff4433;
+}
+
+button#order-list {
+  background-color: #e64d00;
+  color: #fff;
+  margin-left: 10px;
+}
+
+button#order-list:hover {
+  background-color: #cc4400;
+}
+
+button#clear-list {
+  background-color: #ff9900;
+  color: #fff;
+  margin-left: 10px;
+}
+
+button#clear-list:hover {
+  background-color: #e68a00;
+}
+
+ul#to-do-list {
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+}
+
+ul#to-do-list li {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul#to-do-list li span {
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  ul#to-do-list li {
+    flex-wrap: wrap;
+  }
+
+  ul#to-do-list li span {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  ul#to-do-list li button {
+    margin-top: 5px;
+  }
+}
